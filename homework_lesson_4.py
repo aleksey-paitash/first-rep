@@ -59,12 +59,10 @@ print()
 # Кроме того, рядом выводить выходной ли это день или рабочий.
 print('Задание №4:')
 
-num_week_days = {'1.':'Mon':'working_day',
-				'2.':'Tue':'working_day',
-				'3.':'Wed':'working_day',
-				'4.':'Thu':'working_day',
-				'5.':'Fri':'working_day',
-				'6.':'Sat':'weekend',
-				'7.':'Sun':'weekend'}
-for day in num_week_days:
-	print("The number %s day %s is %s" % (day, num_week_days[day]))
+week_day = {'Mon': 'working_day', 'Tue': 'working_day', 'Wed': 'working_day',
+		'Thu': 'working_day', 'Fri': 'working_day', 'Sat': 'weekend', 'Sun': 'weekend'}
+x = 0
+for day in week_day:
+	print(x + 1, day, week_day[day])
+	x += 1
+print()
